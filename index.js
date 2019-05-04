@@ -15,12 +15,10 @@ if(answer.length < 2) { console.log('Please specify something that are 2 charect
 if(answer.toLowerCase() === 'quit' || answer.toLowerCase() === 'left' || answer.toLowerCase() === 'exit') { console.clear; console.log('Exited The Process, The RPC will take sometime to update.'); rl.close(); return; process.exit;}
 client.updatePresence({
   details: answer,
-  state: "Custom Rich Presence",
+  state: "By Conflicted",
   startTimestamp: Date.now(),
   largeImageKey: "profile",
   largeImageText: "Made By Conflicted",
-  smallImageKey: 'smallimage',
-  smallImageText: "Small Image Hover Text",
   instance: true,
 });
 console.clear()
