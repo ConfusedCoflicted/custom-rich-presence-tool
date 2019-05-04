@@ -13,7 +13,7 @@ rl.question('Presence\'s Details? EX. Playing A Game, Learning something\nMade B
 if(!answer) return console.log('Please And Please! Specify Something!')
 client.updatePresence({
   details: answer,
-  state: "Custom RPC",
+  state: "Custom Rich Presence",
   largeImageKey: "profile",
   largeImageText: "Made By Conflicted",
   smallImageKey: 'smallimage',
