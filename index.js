@@ -1,5 +1,5 @@
 const client = require('discord-rich-presence')('574094643894157313');
-
+const ascii = require('ascii-art')
 const readline = require('readline')
 
 const rl = readline.createInterface({
@@ -8,7 +8,8 @@ const rl = readline.createInterface({
 });
 
 function ask() {
-
+ascii.font('Custom-RPC', 'Doom', function(rendered) {
+console.log(rendered)
 rl.question('Presence\'s Details? EX. Playing A Game, Learning something\nMade By Conflicted.\n> ', (answer) => {
 if(!answer) { console.log('Please And Please! Specify Something!'); ask()}
 if(answer.length < 2) { console.log('Please specify something that are 2 charector long!'); ask()}
@@ -23,6 +24,7 @@ client.updatePresence({
 });
 console.clear()
 ask()
+});
 });
 }
 
