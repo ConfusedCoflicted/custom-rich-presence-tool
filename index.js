@@ -11,6 +11,7 @@ function ask() {
 
 rl.question('Presence\'s Details? EX. Playing A Game, Learning something\nMade By Conflicted.\n> ', (answer) => {
 if(!answer) return console.log('Please And Please! Specify Something!')
+if(answer.length < 2) return console.log('Please specify something that are 2 charector long!')
 client.updatePresence({
   details: answer,
   state: "Custom Rich Presence",
