@@ -1,4 +1,4 @@
 @echo off
-title Custom Ruch Presence By Conflicted
+title Custom Rich Presence By Conflicted
 node .
 pause
