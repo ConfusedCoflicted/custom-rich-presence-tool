@@ -6,6 +6,7 @@
   "repository": "https://github.com/ConfusedCoflicted/custom-rich-presence-tool",
   "author": "Conflicted",
   "dependencies": {
+    "ascii-art": "^1.5.1",
     "discord-rich-presence": "0.0.7"
   }
 }
